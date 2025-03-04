@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Blood-Moon/static/css/main.5370b758.css",
+    "main.js": "/Blood-Moon/static/js/main.bdde4134.js",
+    "static/media/Dragon.png": "/Blood-Moon/static/media/Dragon.a48aa679fcb9db287e0c.png",
+    "index.html": "/Blood-Moon/index.html",
+    "main.5370b758.css.map": "/Blood-Moon/static/css/main.5370b758.css.map",
+    "main.bdde4134.js.map": "/Blood-Moon/static/js/main.bdde4134.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5370b758.css",
+    "static/js/main.bdde4134.js"
+  ]
+}
