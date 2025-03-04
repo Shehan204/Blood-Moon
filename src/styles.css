@@ -1,0 +1,73 @@
+/* Base styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+.app-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+}
+
+/* Dragon container and animations */
+.dragon-container {
+  position: fixed;
+  pointer-events: none;
+  transform-origin: center;
+  transition: transform 0.1s ease-out;
+  will-change: transform;
+  left: 0;
+  top: 0;
+  z-index: 1; /* Ensure the dragon is above the blood rain */
+}
+
+.dragon-img {
+  width: 80px;
+  height: 100px;
+  filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.2));
+}
+
+/* Blood rain container */
+.blood-rain-container {
+  position: fixed;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Blood drop styles */
+.blood-drop {
+  position: absolute;
+  width: 5px;
+  height: 10px;
+  background-color: rgba(255, 0, 0, 0.8);
+  border-radius: 50%;
+  animation: fall 2s ease-out forwards, fadeOut 2s ease-out forwards;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(200px);
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+  }
+}
+
+/* Performance optimizations */
+{
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
